@@ -1,4 +1,25 @@
-±¾ÏîÄ¿Ö÷ÒªÓÃÓÚÔÚÆ½Ê±²âÊÔ¹ı³ÌÖĞÑĞ¾¿²âÊÔ×Ô¶¯»¯Ñ§Ï°¡£
-¸ÃÏîÄ¿ÖĞµÄÑ§Ï°¿ÉÄÜ½¨Á¢ÔÚSelenium webdriver + Python 
+æœ¬é¡¹ç›®ä¸»è¦ç”¨äºåœ¨å¹³æ—¶æµ‹è¯•è¿‡ç¨‹ä¸­ç ”ç©¶æµ‹è¯•è‡ªåŠ¨åŒ–å­¦ä¹ ã€‚
+è¯¥é¡¹ç›®ä¸­çš„å­¦ä¹ å¯èƒ½å»ºç«‹åœ¨Selenium webdriver + Python 
 
-¸Õ¸ÕÉÏÂ·£¬ÃşË÷Ç°ĞĞ¡£
+åˆšåˆšä¸Šè·¯ï¼Œæ‘¸ç´¢å‰è¡Œã€‚
+
+http://docs.seleniumhq.org/docs/index.jsp
+https://docs.python.org/2.7/library/index.html
+https://docs.python.org/2.7/library/unittest.html
+https://docs.python.org/2.7/tutorial/index.html
+http://docs.pythontab.com/python/python2.7/appetite.html
+http://www.cnblogs.com/fnng/ (è™«å¸ˆï¼åšå®¢å›­)
+http://www.w3.org/TR/2013/WD-webdriver-20130117/
+http://www.pythontab.com/
+http://www.pythonfan.org/
+http://selenium-python.readthedocs.org/en/latest/index.html
+https://docs.python.org/2.7/index.html
+http://pan.baidu.com/share/home?uk=1462801323&view=share#category/type=0
+http://docs.pythontab.com/python/python2.7/stdlib.html
+
+
+phpï¼phpunit:
+https://phpunit.de/manual/current/zh_cn/installation.html
+https://github.com/giorgiosironi/phpunit-selenium/blob/master/Tests/Selenium2TestCaseTest.php
+http://php.net/manual/zh/
+
