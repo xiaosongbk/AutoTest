@@ -1,192 +1,299 @@
 http://blog.sina.com.cn/u/3053349671
 
-selenium2.0¹ØÓÚpythonµÄ³£ÓÃº¯Êı£¨Ò»£©
+selenium2.0å…³äºpythonçš„å¸¸ç”¨å‡½æ•°ï¼ˆä¸€ï¼‰
 
 
 
-ĞÂ½¨ÊµÀıdriver = webdriver.Chrome() 
+æ–°å»ºå®ä¾‹driver = webdriver.Chrome() 
 
-1.Í¨¹ı±êÇ©ÊôĞÔId²éÕÒÔªËØ
+1.é€šè¿‡æ ‡ç­¾å±æ€§IdæŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_id(element_id)
+æ–¹æ³•ï¼šfind_element_by_id(element_id)
 
-ÊµÀı£ºdriver.find_element_by_id("iptUsername")
+å®ä¾‹ï¼šdriver.find_element_by_id("iptUsername")
 
-2.Í¨¹ı±êÇ©ÊôĞÔname²éÕÒÔªËØ
+2.é€šè¿‡æ ‡ç­¾å±æ€§nameæŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_name(element_name)
+æ–¹æ³•ï¼šfind_element_by_name(element_name)
 
-ÊµÀı£ºdriver.find_element_by_id("inputPwname")
+å®ä¾‹ï¼šdriver.find_element_by_id("inputPwname")
 
-3.Í¨¹ı±êÇ©XpathÂ·¾¶²éÕÒÔªËØ
+3.é€šè¿‡æ ‡ç­¾Xpathè·¯å¾„æŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_xpath(xpath)
+æ–¹æ³•ï¼šfind_element_by_xpath(xpath)
 
-ÊµÀı£ºdriver.find_element_by_xpath("//div[@id='menuContainer']/div/div/ul/li[4]/a")
+å®ä¾‹ï¼šdriver.find_element_by_xpath("//div[@id='menuContainer']/div/div/ul/li[4]/a")
 
-4.Í¨¹ı±êÇ©Ãûtagname²éÕÒÔªËØ
+4.é€šè¿‡æ ‡ç­¾åtagnameæŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_tag_name(tag_name)
+æ–¹æ³•ï¼šfind_element_by_tag_name(tag_name)
 
-ÊµÀı£ºdriver.find_element_by_tag_name("input")
+å®ä¾‹ï¼šdriver.find_element_by_tag_name("input")
 
-×¢Òâ£ºÍ¨¹ıtag_name²éÕÒÊ±Ê¹ÓÃfind_element_by_tag_name²éÕÒµ½µÄÊÇµÚÒ»¸ö±êÇ©µÄtag_name
+æ³¨æ„ï¼šé€šè¿‡tag_nameæŸ¥æ‰¾æ—¶ä½¿ç”¨find_element_by_tag_nameæŸ¥æ‰¾åˆ°çš„æ˜¯ç¬¬ä¸€ä¸ªæ ‡ç­¾çš„tag_name
 
-5.Í¨¹ı±êÇ©ÖĞµÄÔªËØÎÄ±¾Á´½Ó²éÕÒÔªËØ
+5.é€šè¿‡æ ‡ç­¾ä¸­çš„å…ƒç´ æ–‡æœ¬é“¾æ¥æŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_link_text(link_text)
+æ–¹æ³•ï¼šfind_element_by_link_text(link_text)
 
-ÊµÀı£ºdriver.find_element_by_link_text('µÇ  Â¼')
+å®ä¾‹ï¼šdriver.find_element_by_link_text('ç™»  å½•')
 
-6.Í¨¹ı±êÇ©µÄclassÊôĞÔ²éÕÒÔªËØ
+6.é€šè¿‡æ ‡ç­¾çš„classå±æ€§æŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_elements_by_class_name(class_name)
+æ–¹æ³•ï¼šfind_elements_by_class_name(class_name)
 
-ÊµÀı£ºdriver.find_elements_by_class_name("x-panel-body")
+å®ä¾‹ï¼šdriver.find_elements_by_class_name("x-panel-body")
 
-7.Í¨¹ıcssÑùÊ½²éÕÒÔªËØ
+7.é€šè¿‡cssæ ·å¼æŸ¥æ‰¾å…ƒç´ 
 
-·½·¨£ºfind_element_by_css_selector()
+æ–¹æ³•ï¼šfind_element_by_css_selector()
 
-ÊµÀı£ºdriver.find_element_by_css_selector("input.btn")
-ÎÂÜ°ÌáÊ¾£ºfind_elements_by_id()²éÑ¯µ½µÄÊÇÒ»¸ö¼¯ºÏ£¬Èç¹ûidÃû×ÖÖØ¸´µÄÊ±ºò¿ÉÒÔ²ÉÈ¡find_elements_by_id()£¬ÆäËûµÄ²éÑ¯·½Ê½Í¬Àí£»
+å®ä¾‹ï¼šdriver.find_element_by_css_selector("input.btn")
+æ¸©é¦¨æç¤ºï¼šfind_elements_by_id()æŸ¥è¯¢åˆ°çš„æ˜¯ä¸€ä¸ªé›†åˆï¼Œå¦‚æœidåå­—é‡å¤çš„æ—¶å€™å¯ä»¥é‡‡å–find_elements_by_id()ï¼Œå…¶ä»–çš„æŸ¥è¯¢æ–¹å¼åŒç†ï¼›
 
-8.ä¯ÀÀÆ÷ÖĞ¼ÓÔØurl
+8.æµè§ˆå™¨ä¸­åŠ è½½url
 
-·½·¨£ºget(url)
+æ–¹æ³•ï¼šget(url)
 
-ÊµÀı£ºdriver.get("http//:www.baidu.com")
+å®ä¾‹ï¼šdriver.get("http//:www.baidu.com")
 
-9.ÏòÇ°
+9.å‘å‰
 
-·½·¨£ºforward()
+æ–¹æ³•ï¼šforward()
 
-ÊµÀı£ºdriver.forward()
+å®ä¾‹ï¼šdriver.forward()
 
-10.·µ»Øµ±Ç°»á»°ÖĞµÄcookies
+10.è¿”å›å½“å‰ä¼šè¯ä¸­çš„cookies
 
-·½·¨£ºget_cookies()
+æ–¹æ³•ï¼šget_cookies()
 
-ÊµÀı£ºdriver.get_cookies()
+å®ä¾‹ï¼šdriver.get_cookies()
 
-11.¸ù¾İcookie name ²éÕÒ
+11.æ ¹æ®cookie name æŸ¥æ‰¾
 
-·½·¨£ºdriver.get_cookie(cookie_name)
+æ–¹æ³•ï¼šdriver.get_cookie(cookie_name)
 
-ÊµÀı£ºdriver.get_cookie("NET_SessionId")
+å®ä¾‹ï¼šdriver.get_cookie("NET_SessionId")
 
-12.½ØÈ¡µ±Ç°Ò³Ãæ
+12.æˆªå–å½“å‰é¡µé¢
 
-·½·¨£º
+æ–¹æ³•ï¼š
 
 get_screenshot_as_file(filename)
-ÊµÀı£ºdriver.
+å®ä¾‹ï¼šdriver.
 get_screenshot_as_file("D:\\Program Files\\Python27\\NM.bmp")
-13.»ñÈ¡µ±Ç°´°¿ÚµÄ×ø±ê
-·½·¨£ºget_window_position()
-ÊµÀı£ºdriver.get_window_position()
-14.»ñÈ¡µ±Ç°´°¿ÚµÄ³¤ºÍ¿í
-·½·¨£ºget_window_size()
-ÊµÀı£ºdriver.get_window_size()	
+13.è·å–å½“å‰çª—å£çš„åæ ‡
+æ–¹æ³•ï¼šget_window_position()
+å®ä¾‹ï¼šdriver.get_window_position()
+14.è·å–å½“å‰çª—å£çš„é•¿å’Œå®½
+æ–¹æ³•ï¼šget_window_size()
+å®ä¾‹ï¼šdriver.get_window_size()	
 
 
 --------------------------------------------------------------------------------
-selenium2.0¹ØÓÚpythonµÄ³£ÓÃº¯Êı£¨¶ş£©
+selenium2.0å…³äºpythonçš„å¸¸ç”¨å‡½æ•°ï¼ˆäºŒï¼‰
 
 
 
-ĞÂ½¨ÊµÀıdriver = webdriver.Chrome()
+æ–°å»ºå®ä¾‹driver = webdriver.Chrome()
 
-1.»ñÈ¡µ±Ç°Ò³ÃæµÄUrlº¯Êı
+1.è·å–å½“å‰é¡µé¢çš„Urlå‡½æ•°
 
-·½·¨£ºcurrent_url
+æ–¹æ³•ï¼šcurrent_url
 
-ÊµÀı£º
+å®ä¾‹ï¼š
 
 driver.current_url
 
-2.»ñÈ¡ÔªËØ×ø±ê
+2.è·å–å…ƒç´ åæ ‡
 
-·½·¨£ºlocation
+æ–¹æ³•ï¼šlocation
 
-½âÊÍ£ºÊ×ÏÈ²éÕÒµ½ÄãÒª»ñÈ¡ÔªËØµÄ£¬È»ºóµ÷ÓÃlocation·½·¨
+è§£é‡Šï¼šé¦–å…ˆæŸ¥æ‰¾åˆ°ä½ è¦è·å–å…ƒç´ çš„ï¼Œç„¶åè°ƒç”¨locationæ–¹æ³•
 
-ÊµÀı£º
+å®ä¾‹ï¼š
 
 driver.find_element_by_xpath("//*[@id='tablechart']/tbody/tr[14]/td[9]").location
 
-3.±íµ¥µÄÌá½»
+3.è¡¨å•çš„æäº¤
 
-·½·¨£ºsubmit
+æ–¹æ³•ï¼šsubmit
 
-½âÊÍ:²éÕÒµ½±íµ¥£¨from£©Ö±½Óµ÷ÓÃsubmit¼´¿É
+è§£é‡Š:æŸ¥æ‰¾åˆ°è¡¨å•ï¼ˆfromï¼‰ç›´æ¥è°ƒç”¨submitå³å¯
 
-ÊµÀı£º
+å®ä¾‹ï¼š
 
 driver.find_element_by_id("form1").submit()
 
-4.»ñÈ¡CSSµÄÊôĞÔÖµ
+4.è·å–CSSçš„å±æ€§å€¼
 
-·½·¨£ºvalue_of_css_property(css_name)
-ÊµÀı£º
+æ–¹æ³•ï¼švalue_of_css_property(css_name)
+å®ä¾‹ï¼š
 driver.find_element_by_css_selector("input.btn").value_of_css_property("input.btn")
-5.»ñÈ¡ÔªËØµÄÊôĞÔÖµ
-·½·¨£ºget_attribute(element_name)
-ÊµÀı£º
+5.è·å–å…ƒç´ çš„å±æ€§å€¼
+æ–¹æ³•ï¼šget_attribute(element_name)
+å®ä¾‹ï¼š
 driver.find_element_by_id("sellaiyuan").get_attribute("sellaiyuan")
-6.ÅĞ¶ÏÔªËØÊÇ·ñ±»Ñ¡ÖĞ
-·½·¨£ºis_selected()
-ÊµÀı£º
+6.åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«é€‰ä¸­
+æ–¹æ³•ï¼šis_selected()
+å®ä¾‹ï¼š
 driver.find_element_by_id("form1").is_selected()
-7.·µ»ØÔªËØµÄ´óĞ¡
-·½·¨£ºsize
-ÊµÀı£º
+7.è¿”å›å…ƒç´ çš„å¤§å°
+æ–¹æ³•ï¼šsize
+å®ä¾‹ï¼š
 driver.find_element_by_id("iptPassword").size
-·µ»ØÖµ£º{'width': 250, 'height': 30}
-8.ÅĞ¶ÏÔªËØÊÇ·ñÏÔÊ¾
-·½·¨£ºis_displayed()
-ÊµÀı£º
+è¿”å›å€¼ï¼š{'width': 250, 'height': 30}
+8.åˆ¤æ–­å…ƒç´ æ˜¯å¦æ˜¾ç¤º
+æ–¹æ³•ï¼šis_displayed()
+å®ä¾‹ï¼š
 driver.find_element_by_id("iptPassword").is_displayed()
-9.ÅĞ¶ÏÔªËØÊÇ·ñ±»Ê¹ÓÃ
-·½·¨£ºis_enabled()
-ÊµÀı£º
+9.åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«ä½¿ç”¨
+æ–¹æ³•ï¼šis_enabled()
+å®ä¾‹ï¼š
 driver.find_element_by_id("iptPassword").is_enabled()
-10.»ñÈ¡ÔªËØµÄÎÄ±¾Öµ
-·½·¨£ºtext
-ÊµÀı£ºdriver.find_element_by_id("iptUsername").text
-11.ÔªËØ¸³Öµ
-·½·¨£ºsend_keys(*values)
-ÊµÀı£º
+10.è·å–å…ƒç´ çš„æ–‡æœ¬å€¼
+æ–¹æ³•ï¼štext
+å®ä¾‹ï¼šdriver.find_element_by_id("iptUsername").text
+11.å…ƒç´ èµ‹å€¼
+æ–¹æ³•ï¼šsend_keys(*values)
+å®ä¾‹ï¼š
 driver.find_element_by_id("iptUsername").send_keys('admin')
-×¢ÒâÈç¹ûÊÇº¯ÊıĞèÒªÔö¼Ó×ªÒå·ûu,eg.
-driver.find_element_by_id("iptUsername").send_keys(u'Çà´º')
-12.·µ»ØÔªËØµÄtagName
-·½·¨£ºtag_name
-ÊµÀı£º
+æ³¨æ„å¦‚æœæ˜¯å‡½æ•°éœ€è¦å¢åŠ è½¬ä¹‰ç¬¦u,eg.
+driver.find_element_by_id("iptUsername").send_keys(u'é’æ˜¥')
+12.è¿”å›å…ƒç´ çš„tagName
+æ–¹æ³•ï¼štag_name
+å®ä¾‹ï¼š
 driver.find_element_by_id("iptUsername").tag_name
-13.É¾³ıä¯ÀÀÆ÷ËùÒÔµÄcookies
-·½·¨£ºdelete_all_cookies()
-ÊµÀı£º
+13.åˆ é™¤æµè§ˆå™¨æ‰€ä»¥çš„cookies
+æ–¹æ³•ï¼šdelete_all_cookies()
+å®ä¾‹ï¼š
 driver.delete_all_cookies()
-14.É¾³ıÖ¸¶¨µÄcookie
-·½·¨£ºdelete_cookie(name)
-ÊµÀı£ºderiver.delete_cookie("my_cookie_name")
-15.¹Ø±Õä¯ÀÀÆ÷
-·½·¨£ºclose()
-ÊµÀı£ºdriver.close()
-16.¹Ø±Õä¯ÀÀÆ÷²¢ÇÒÍÆ³öÇı¶¯³ÌĞò
-·½·¨£ºquit()
-ÊµÀı£ºdriver.quit()
-17.·µ»ØÉÏÒ»Ò³
-·½·¨£ºback()
-ÊµÀı£ºdriver.back()
-18.ÉèÖÃµÈ´ı³¬Ê±
-·½·¨£ºimplicitly_wait(wait_time)
-ÊµÀı£ºdriver.implicitly_wait(30)
-19.ä¯ÀÀÆ÷´°¿Ú×î´ó»¯
-·½·¨£ºmaximize_window()
-ÊµÀı£ºdriver.maximize_window()
-20.²é¿´ä¯ÀÀÆ÷µÄÃû×Ö
-·½·¨£ºname
-ÊµÀı£ºdrvier.name
+14.åˆ é™¤æŒ‡å®šçš„cookie
+æ–¹æ³•ï¼šdelete_cookie(name)
+å®ä¾‹ï¼šderiver.delete_cookie("my_cookie_name")
+15.å…³é—­æµè§ˆå™¨
+æ–¹æ³•ï¼šclose()
+å®ä¾‹ï¼šdriver.close()
+16.å…³é—­æµè§ˆå™¨å¹¶ä¸”æ¨å‡ºé©±åŠ¨ç¨‹åº
+æ–¹æ³•ï¼šquit()
+å®ä¾‹ï¼šdriver.quit()
+17.è¿”å›ä¸Šä¸€é¡µ
+æ–¹æ³•ï¼šback()
+å®ä¾‹ï¼šdriver.back()
+18.è®¾ç½®ç­‰å¾…è¶…æ—¶
+æ–¹æ³•ï¼šimplicitly_wait(wait_time)
+å®ä¾‹ï¼šdriver.implicitly_wait(30)
+19.æµè§ˆå™¨çª—å£æœ€å¤§åŒ–
+æ–¹æ³•ï¼šmaximize_window()
+å®ä¾‹ï¼šdriver.maximize_window()
+20.æŸ¥çœ‹æµè§ˆå™¨çš„åå­—
+æ–¹æ³•ï¼šname
+å®ä¾‹ï¼šdrvier.name
+
+
+webdriverä¸­å…ƒç´ æŸ¥æ‰¾å¸¸ç”¨æ–¹æ³•
+http://blog.sina.com.cn/s/blog_915cefbf0101sah4.html
+
+Seleniumå¯»æ‰¾å…ƒç´ å®šä½
+id
+findElement(by.id(â€œidâ€))
+name
+findElement(by.name(â€œnameâ€))
+class_name
+findElement(by.className(â€œclassNameâ€))
+linkText
+driver.findElement(By.linkText("Inbox"));
+partialLinkText
+driver.findElement(By.partialLinkText("Inbox"));
+tagName
+tagName(â€œhtmlçš„ç±»åˆ«ä¿¡æ¯å¦‚buttonâ€)
+Css
+1ï¼‰ç»å¯¹è·¯å¾„ åœ¨DOMä¸­çš„å…·ä½“ä½ç½®
+findElement(by.cssSelector(â€œhtml body div form inputâ€))
+æˆ–findElement(by.cssSelector(â€œhtml>body>div>form>inputâ€))
+2ï¼‰ç›¸å¯¹è·¯å¾„
+        driver.findElement(By.cssSelector("input"));ç¬¬ä¸€ä¸ªinputå…ƒç´ ã€‚
+driver.findElement(By.cssSelector("input.login")); htmlæ ‡ç­¾.classçš„å±æ€§å€¼
+3ï¼‰ç›¸å¯¹Idé€‰æ‹©å™¨
+driver.findElement(By.cssSelector("input#username"));htmlæ ‡ç­¾#id
+driver.findElement(By.cssSelector("#username"));åªæ˜¯#id
+4ï¼‰å±æ€§
+driver.findElement(By.cssSelector("input[name=username]"));ä½¿ç”¨nameå±æ€§
+driver.findElement(By.cssSelector("img[alt='Previous']"));ä½¿ç”¨altå±æ€§
+driver.findElements(By.cssSelector("img[alt]"));é€šè¿‡å±æ€§åç§°æŸ¥æ‰¾ï¼Œé¡µé¢æ‰€æœ‰imgå« æœ‰altå±æ€§çš„æ ‡ç­¾
+driver.findElement(By.cssSelector("input[type='submit'][value='Login']"));è”åˆå¤šä¸ªå± æ€§æŸ¥è¯¢
+driver.findElements(By.cssSelector("img:not([alt])"));ä½¿ç”¨ä¼ªç±»
+5ï¼‰éƒ¨åˆ†å±æ€§ (å¯¹äºé¡µé¢ä¸Šæœ‰åŠ¨æ€å˜åŒ–çš„å±æ€§çš„å…ƒç´ æ˜¯éå¸¸æœ‰ç”¨çš„)
+^=  driver.findElement(By.cssSelector(Input[id ^ =â€˜ ctrlâ€™]));åŒ¹é…åˆ°idå¤´éƒ¨ å¦‚ctrl_12
+$=  driver.findElement(By.cssSelector(Input[id ^ =â€˜ ctrlâ€™]));åŒ¹é…åˆ°idå°¾éƒ¨ å¦‚a_ctrl
+*=  driver.findElement(By.cssSelector(Input[id *=â€˜ ctrlâ€™]));åŒ¹é…åˆ°idä¸­é—´å¦‚1_ctrl_12
+é«˜çº§CSS
+1ï¼‰æŸ¥è¯¢å­å…ƒç´ 
+WebElement userName =  driver.findElement(By.cssSelector("form#loginForm > input"));
+WebElement userName = driver.findEleme(By.cssSelector("form#loginForm :nth-child(2)"));
+:first-child å®šä½è¡¨å•ç¬¬ä¸€ä¸ªå­å…ƒç´ 
+:last-child å®šä½è¡¨å•æœ€åä¸€ä¸ªå­å…ƒç´ 
+:nth-child(2) å®šä½è¡¨å•ä¸­ç¬¬äºŒä¸ªå­å…ƒç´ 
+2ï¼‰ä½¿ç”¨ä¼ªç±»
+driver.findElement(By.cssSelector("input:focus")); ä¹Ÿå¯ä½¿ç”¨hover active
+:enable  input:enable å®šä½å±æ€§ä¸ºenableçš„inputå…ƒç´ 
+:disable  input:disable å®šä½å±æ€§ä¸ºdisableçš„inputå…ƒç´ 
+:checked input:checked å®šä½æœ‰å¤šé€‰æ¡†å±æ€§ä¸ºcheckedçš„å…ƒç´ 
+3ï¼‰æŸ¥è¯¢å…„å¼Ÿå…ƒç´ 
+driver.findElement(By.cssSelector("#nv a + b")); å®šä½åˆ°a å†å®šä½åˆ°å’Œå®ƒç›¸é‚»çš„b
+Xpathï¼ˆå¯ä»¥å‘å‰å‘åæŸ¥è¯¢DOMç»“æ„ï¼Œcssåªèƒ½å‘å‰ï¼‰
+1ï¼‰ç»å¯¹è·¯å¾„
+driver.findElement(By.xpath("html/body/div/div/form/input"));//å¦‚æœå‘ç”Ÿç»“æ„æ”¹å˜åˆ™ æ‰¾ä¸åˆ°
+2ï¼‰ç›¸å¯¹è·¯å¾„
+driver.findElement(By.xpath("//input"));//å‡è®¾åœ¨DOMä¸­çš„ç¬¬ä¸€ä¸ª
+3ï¼‰ä½¿ç”¨ç´¢å¼•
+driver.findElement(By.xpath("//input[2]"));//æ‰¾ç¬¬äºŒä¸ªinputå…ƒç´ 
+4ï¼‰å±æ€§å€¼
+driver.findElement(By.xpath("//input[@id='username']"));//ä½¿ç”¨idå±æ€§åŒ¹é…
+driver.findElement(By.xpath("img[@alt='Previous']"));//ä½¿ç”¨altå±æ€§
+driver.findElement(By.xpath ("//input[@type='submit'][@value='Login']"));//è”åˆå¤šä¸ªå±æ€§
+WebElement previousButton = driver.findElement (By.xpath("//input[@type='submit'and  @value='Login']"));//ä½¿ç”¨andè”åˆæŸ¥è¯¢
+WebElement previousButton = driver.findElement (By.xpath("//input[@type='submit'or  @value='Login']"));//ä½¿ç”¨oré€‰æ‹©æŸ¥è¯¢
+5ï¼‰å±æ€§åç§°
+List imagesWithAlt = driver.findElements (By.xpath ("img[@alt]"));//ä½¿ç”¨å± æ€§åç§°  imgä¸­å¸¦æœ‰altå±æ€§çš„å…ƒç´ 
+6ï¼‰éƒ¨åˆ†å±æ€§å€¼
+starts-with() driver.findElement(By.XPath(â€œinput[starts-with(@id,â€™ctrlâ€™)]â€));
+ends-with() driver.findElement(By.XPath(â€œinput[ends-with(@id,â€™ctrlâ€™)]â€));
+contains() starts-with() driver.findElement(By.XPath(â€œinput[contains(@id,â€™ctrlâ€™)]â€));
+7ï¼‰ä½¿ç”¨å€¼åŒ¹é…ä»»æ„å…ƒç´ å±æ€§å€¼
+driver.findElement(By.xpath("//input[@*='username']"));ä»»æ„å±æ€§åç§°ä¸ºusernameçš„å…ƒç´ 
+8ï¼‰XPathè½´ å€Ÿä½äºå…ƒç´ ä¸å…ƒç´ ä¹‹é—´çš„å…³ç³»å®šä½
+ancestor //td[text()=â€™Product1â€™]/ancestor::table é€‰æ‹©å½“å‰èŠ‚ç‚¹æ‰€æœ‰çš„çˆ¶ç±»å…ƒç´  
+  å±æ€§   åç§°             å…ƒç´ 
+descendant //table/descendant::td/input é€‰æ‹©å½“å‰èŠ‚ç‚¹æ‰€æœ‰å­å…ƒç´ 
+following  //td[text()=â€™Product1â€™]/following::tr é€‰æ‹©å½“å‰å…ƒç´ ç»“æŸæ ‡ç­¾åçš„æ‰€æœ‰å…ƒç´ 
+following-sibling //td[text()=â€™Product1â€™]/following-sibling::td å½“å‰å…ƒç´ åçš„å…„å¼Ÿå…ƒç´ 
+preceding //td[text()=â€™$150â€™]/preceding::tr å½“å‰èŠ‚ç‚¹å¼€å§‹æ ‡ç­¾ä¹‹å‰çš„æ‰€æœ‰èŠ‚ç‚¹
+preceding-sibling //td[text()=â€™$150â€™]/preceding-sibling::td å½“å‰å€Ÿç‚¹ä¹‹å‰çš„æ‰€æœ‰åŒçº§èŠ‚ç‚¹
+å®šä½å•å…ƒæ ¼å…ƒç´ 
+æ–¹å¼ï¼š
+tableï¼šå®šä¹‰è¡¨æ ¼
+caption:è¡¨æ ¼æ ‡é¢˜
+th:è¡¨å¤´
+tr:è¡Œ
+td:å•å…ƒ
+thead:é¡µçœ‰
+tbody:ä¸»é¢˜
+tfoot:é¡µè„š
+col:åˆ—çš„å±æ€§
+colgroup:åˆ—çš„ç»„
+ 
+findElementå°†ä¼šæŸ¥è¯¢æ•´ä¸ªDOM æœ€ç»ˆè¿”å›ç¬¬ä¸€ä¸ªæ‰¾åˆ°çš„åŒ¹é…çš„å…ƒç´ 
+findElementå¯ä»¥æŸ¥è¯¢å­ç±»ï¼Œç¼©å†™ä¸º
+driver.findElement(By.id("div1")).findElement(By.linkText("top"));
+æŸ¥æ‰¾ä¸€ä¸ªå…ƒç´                  æŸ¥æ‰¾è¿™ä¸ªå…ƒç´ ä¸‹çš„å­ç±»top
+å½“findElementæ‰¾ä¸åˆ°å…ƒç´ æ—¶ã€‚æŠ›å‡ºNoSuchElementFoundException
+findElements()æ–¹æ³•è¿”å›æ‰€æœ‰åŒ¹é…å®šä½ç­–ç•¥çš„WebElementçš„é›†åˆï¼Œæˆ‘ä»¬å¯ä»¥ä½¿ç”¨javaä¸­Listç±»æ¥åˆ›å»ºWebElementsçš„å®ä¾‹ï¼Œå®ç°æŸ¥æ‰¾å¤šä¸ªå…ƒç´ ï¼š
+List links = driver.findElements(By.cssSelector("#nv a")); 
+ 
+
+
+
+
+
 
