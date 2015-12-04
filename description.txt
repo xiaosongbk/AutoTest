@@ -18,6 +18,7 @@ http://pan.baidu.com/share/home?uk=1462801323&view=share#category/type=0
 http://docs.pythontab.com/python/python2.7/stdlib.html
 http://stackoverflow.com/questions/8851682/assert-verifyelementpresent-with-python-and-webdriver
 http://stackoverflow.com/search?q=selenium+webdriver
+http://stackoverflow.com/questions/24531456/how-to-assert-image-present-in-selenium-python-web-driver
 
 
 php／phpunit:
