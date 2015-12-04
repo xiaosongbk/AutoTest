@@ -16,6 +16,8 @@ http://selenium-python.readthedocs.org/en/latest/index.html
 https://docs.python.org/2.7/index.html
 http://pan.baidu.com/share/home?uk=1462801323&view=share#category/type=0
 http://docs.pythontab.com/python/python2.7/stdlib.html
+http://stackoverflow.com/questions/8851682/assert-verifyelementpresent-with-python-and-webdriver
+http://stackoverflow.com/search?q=selenium+webdriver
 
 
 php／phpunit:
